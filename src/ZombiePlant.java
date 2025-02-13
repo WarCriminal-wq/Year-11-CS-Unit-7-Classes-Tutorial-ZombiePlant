@@ -18,17 +18,17 @@ public class ZombiePlant {
         }
         return false;
     }
-    public void treat(int treatValue){
+    public void treat(int Value){
 
         if (treatments > 0) {
-            if((treatValue > 0) && treatValue <= potency){
+            if((Value > 0) && Value <= potency){
                 treatments--;
             }
-            else if (treatValue > 0){
+            else if (Value > 0){
                 treatments++;
             }
         }
-        else if(treatValue > potency) {
+        else if(Value > potency) {
             treatments++;
         }
     }
